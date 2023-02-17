@@ -1,0 +1,8 @@
+
+checkAllButton.addEventListener('click', function() {
+  checkboxes.forEach(function(checkbox) {
+    checkbox.checked = true;
+    checkbox.closest('tr').className = 'checked';
+  });
+  updateSummary();
+});
